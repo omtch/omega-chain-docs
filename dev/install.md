@@ -31,4 +31,13 @@ By running `./build/bin/geth --help`, we can get all `option` info. Specific usa
 ./geth --syncmode full --datadir data/ --http --http.addr 0.0.0.0 --http.port 8545 --http.corsdomain=* --http.vhosts=* --http.api personal,db,eth,net,web3,txpool,miner --ws --ws.addr 0.0.0.0 --ws.port 8546 --ws.origins=* --ws.api personal,admin,db,eth,net,web3,miner,shh,txpool,debug --gcmode=archive --bootnodes enode://163fcba9e550fb31baf895153111fc212a2ef73ca904c4437cf164f69f0a2046b5b2090d2a7ab2dcec9dbc1e9787bb94468c39b7ea1c56dfb55664971924e47b@34.64.149.189:32668
 ```
 
+
+
+```
+// MAINNET
+./geth --datadir data/ init mainnet-genesis.json
+
+./geth --syncmode full --datadir data/ --http --http.addr 0.0.0.0 --http.port 8545 --http.corsdomain=* --http.vhosts=* --http.api personal,db,eth,net,web3,txpool,miner --ws --ws.addr 0.0.0.0 --ws.port 8546 --ws.origins=* --ws.api personal,admin,db,eth,net,web3,miner,shh,txpool,debug --gcmode=archive --bootnodes enode://6197dab4973bfae9041efe1c4f77e98a3e6a7a1239036231d8d3a702261842b7b43b81b515d9c0382486c376c45b0f2d1acb6e8383d5187c422cd9a3d1533999@34.133.149.176:32668
+```
+
 > SSD is required
